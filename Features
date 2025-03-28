@@ -1,0 +1,111 @@
+import React from 'react';
+import { Shield, Brain, Leaf, Database, Lock, Cpu, BarChart as ChartBar, Zap } from 'lucide-react';
+
+const Features = () => {
+  return (
+    <div className="space-y-12">
+      <div className="text-center">
+        <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+          Comprehensive Digital Twin Features
+        </h2>
+        <p className="mt-4 max-w-2xl mx-auto text-xl text-slate-500">
+          Explore our advanced features designed to transform your campus into a smart, sustainable environment.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Security Feature */}
+        <div className="bg-white overflow-hidden shadow rounded-lg">
+          <div className="px-6 py-8">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <Shield className="h-8 w-8 text-emerald-600" />
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-medium text-slate-900">Advanced Security</h3>
+              </div>
+            </div>
+            <div className="mt-4">
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <Lock className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">Multi-factor authentication</span>
+                </li>
+                <li className="flex items-start">
+                  <Lock className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">Role-based access control</span>
+                </li>
+                <li className="flex items-start">
+                  <Lock className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">End-to-end encryption</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* AI & Analytics Feature */}
+        <div className="bg-white overflow-hidden shadow rounded-lg">
+          <div className="px-6 py-8">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <Brain className="h-8 w-8 text-emerald-600" />
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-medium text-slate-900">AI & Analytics</h3>
+              </div>
+            </div>
+            <div className="mt-4">
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <Cpu className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">Predictive maintenance</span>
+                </li>
+                <li className="flex items-start">
+                  <ChartBar className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">Resource optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <Brain className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">Anomaly detection</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Sustainability Feature */}
+        <div className="bg-white overflow-hidden shadow rounded-lg">
+          <div className="px-6 py-8">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <Leaf className="h-8 w-8 text-emerald-600" />
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-medium text-slate-900">Sustainability</h3>
+              </div>
+            </div>
+            <div className="mt-4">
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <Zap className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">Energy management</span>
+                </li>
+                <li className="flex items-start">
+                  <Database className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">Resource tracking</span>
+                </li>
+                <li className="flex items-start">
+                  <Leaf className="h-5 w-5 text-emerald-500 mr-2" />
+                  <span className="text-slate-600">Waste reduction</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Features;
